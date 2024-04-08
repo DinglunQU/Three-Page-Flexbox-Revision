@@ -1,0 +1,77 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.title {
+    color: #fff;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Main styles */
+.main {
+    padding-top: 100px; /* Adjust based on header height */
+}
+
+.background-image {
+    background-image: url('Home_Image.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+.introduction {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.introduction p {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+}
